@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="Style.css">
+	<title>Story</title>
+</head>
+<body>
+	<form action="" name="NameForm" id="idForm">
+		<center>
+			<input type="text" name="nameInput" id="nameInput" value="">
+			<label for="nameInput">Веди Имя</label>
+			<br>
+			<p>Части тела</p>
+			<input type="radio" name="bodyPice" value="Ноги"><label>Ноги</label>
+			<br>
+			<input type="radio" name="bodyPice" value="руки"><label>руки</label>
+			<br>
+			<input type="radio" name="bodyPice" value="Голову"><label>голову</label>
+			<br>
+			<input type="text" name="Tools" id="Tools"><label>Название инструмента в тварительном падеже</label>
+			<br>
+
+
+			<input type="button" name="butt2" onclick="submitAction(getElementById('idForm'))" value="сгенерировать">
+		</center>
+	</form>
+	<center>
+		<div id="trash">
+			<p>Приветствую тебя </p>
+			<div id="name"></div>
+			<p>,сегодня ты попал в интересную историю. Думаю отрезать себе </p>
+			<div id="piceOfBody"></div> <div id="tool"></div> 
+			<p> была не лудчшая идея.</p>
+		</div>
+    </center>
+	<script type="text/javascript" src="Script.js"></script>
+</body>
+</html>
